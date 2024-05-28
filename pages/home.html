@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../assets/multimedia/corporate_logo.png">
+    <link rel="stylesheet" href="./../assets/style/style.css">
+
+</head>
+
+<body class="homePage">
+    <header>
+        <img  class="logo" src="./../assets/multimedia/corporate_logo.png" alt="logo">
+    </header>
+    
+    <main >
+
+        <nav>
+            <ul class="navmenu">
+                <li class="limenu">   <h4>Navigational Menu</h4>  </li>
+    
+                <li class="limenu"><a href="./../index.html">Login Page</a></li>
+
+                <li class="limenu"> <a href="./tutorials.html">Tutorials</a> </li>
+
+                <li class="limenu"><a href="./airresult.html">Air Results</a></li>
+    
+                <li class="limenu"><a href="./forgottenPassword.html">Forgotten Password</a></li>
+
+                <li class="limenu"><a href="https://www.weather-forecast.com/" target="_blank">Weather Forecast</a></li>
+
+                <li class="limenu"><a href="https://wwwnc.cdc.gov/travel/" target="_blank">Traveler's Health</a></li>
+           </ul>
+       </nav>
+
+       
+       <section class="searchsection">
+        
+        
+        <div class="depart_airport ">
+            <label for="depart_airport"> <span class="required">*</span> Departing airport</label>
+            <select name="airportList"  >
+                                <option value="">Select</option>
+                                <option value="MVD">Montevideo</option>
+                                <option value="EZE">Ezeiza</option>
+                                <option value="AEP">Aeroparque</option>
+                                                </select>
+        </div>
+        
+        
+        <div class="depart_date ">
+            <label for="depart_date"> <span class="required">*</span> Departing Date</label>
+        <input type="date" id="start" name="trip-start" value="2024-04-28" min="2024-04-28" max="2030-12-31" />
+        
+        </div>
+        
+        <div class="depart_time ">
+            <label for="depart_time"> <span class="required">*</span> Departing Time</label>
+            <select name="timeList"  >
+                                <option value="">Select</option> 
+                                <option value="6">Morning (6:00 am)</option>
+                                <option value="12">Afternoon (12:00 pm)</option>
+                                <option value="18">Evening (6:00 pm)</option>
+                                <option value="0">12:00 am</option>
+                                <option value="1">1:00 am</option>
+                                <option value="2">2:00 am</option>
+                                <option value="3">3:00 am</option>
+                                <option value="4">4:00 am</option>
+                                <option value="5">5:00 am</option>
+                                <option value="6">6:00 am</option>
+                                <option value="7">7:00 am</option>
+                                <option value="8">8:00 am</option>
+                                <option value="9">9:00 am</option>
+                                <option value="10">10:00 am</option>
+                                <option value="11">11:00 am</option>
+                                <option value="12">12:00 pm</option>
+                                <option value="13">1:00 pm</option>
+                                <option value="14">2:00 pm</option>
+                                <option value="15">3:00 pm</option>
+                                <option value="16">4:00 pm</option>
+                                <option value="17">5:00 pm</option>
+                                <option value="18">6:00 pm</option>
+                                <option value="19">7:00 pm</option>
+                                <option value="20">8:00 pm</option>
+                                <option value="21">9:00 pm</option>
+                                <option value="22">10:00 pm</option>
+                                <option value="23">11:00 pm</option>
+                        </select>
+        </div>
+        <div class="arrival_airport ">
+            <label for="arrival_airport"> <span class="required">*</span> Arrival airport</label>
+            <select name="airportList"  >
+                                <option value="">Select</option>
+                                <option value="MVD">Montevideo</option>
+                                <option value="EZE">Ezeiza</option>
+                                <option value="AEP">Aeroparque</option>
+                                                </select>
+        </div>
+        
+        
+        <div class="return_date ">
+            <label for="arrival_date"> <span class="required">*</span> Return Date</label>
+        <input type="date" id="start" name="trip-start" value="2024-04-28" min="2024-04-28" max="2030-12-31" />
+        
+        </div>
+        
+        <div class="return_time ">
+            <label for="arrival_time"> <span class="required">*</span> Return Time</label>
+            <select name="timeList"  >
+                                <option value="">Select</option> 
+                                <option value="6">Morning (6:00 am)</option>
+                                <option value="12">Afternoon (12:00 pm)</option>
+                                <option value="18">Evening (6:00 pm)</option>
+                                <option value="0">12:00 am</option>
+                                <option value="1">1:00 am</option>
+                                <option value="2">2:00 am</option>
+                                <option value="3">3:00 am</option>
+                                <option value="4">4:00 am</option>
+                                <option value="5">5:00 am</option>
+                                <option value="6">6:00 am</option>
+                                <option value="7">7:00 am</option>
+                                <option value="8">8:00 am</option>
+                                <option value="9">9:00 am</option>
+                                <option value="10">10:00 am</option>
+                                <option value="11">11:00 am</option>
+                                <option value="12">12:00 pm</option>
+                                <option value="13">1:00 pm</option>
+                                <option value="14">2:00 pm</option>
+                                <option value="15">3:00 pm</option>
+                                <option value="16">4:00 pm</option>
+                                <option value="17">5:00 pm</option>
+                                <option value="18">6:00 pm</option>
+                                <option value="19">7:00 pm</option>
+                                <option value="20">8:00 pm</option>
+                                <option value="21">9:00 pm</option>
+                                <option value="22">10:00 pm</option>
+                                <option value="23">11:00 pm</option>
+                        </select>
+        </div>
+
+        <button id="SearchButton" onclick="location.href='./airresult.html'">Click Search</button>
+        
+        </section>
+        
+        <aside>
+            <div class="titulo-aside">
+                <h5 class="visit">Visit these wonderful cities</h5>
+                 </div>
+               <div class="galeria">
+                 <div class="lista-imagenes">         
+                    <div class="nombre-ciudad">
+                       <h5 class="cities">Barcelona</h5>
+                    </div>
+                    <img src="./../assets/multimedia/bcn.jpg" alt="bcn">
+                    <div class="nombre-ciudad">
+                        <h5 class="cities">Rio de Janeiro</h5>
+                     </div>
+                     <img src="./../assets/multimedia/rio.jpg" alt="rio">
+                    
+                    <div class="nombre-ciudad">
+                        <h5 class="cities">Buenos Aires</h5>
+                    </div>
+                        <img src="./../assets/multimedia/bue.jpg" alt="bue">
+                     
+                    
+                  </div>
+                </div>
+        
+        </aside>
+        
+        </main>
+        
+        <footer >
+            
+            <div id="backtologinpage">
+                <a href="./../index.html">Back to login page</a>
+                </div>
+
+        </footer>
+ 
+
+</body>
+
+</html>
