@@ -1,0 +1,189 @@
+
+body {
+
+     background-size:cover ;
+     background-repeat: no-repeat;
+     position: center;
+     min-height: 100vh; 
+
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
+     
+  background-image: url("../multimedia/palacio_salvo.png");
+  border-radius: 25px;
+     
+     }
+
+
+ 
+     #grids {
+        height:100vh;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "section"  
+        "aside"
+        "footer";
+        
+        grid-template-rows: auto; 
+        grid-template-columns: auto;
+      }
+ 
+
+  @media screen and (min-width: 768px) {
+  #grids{
+    height:100vh;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav section aside "
+    "nav section aside"
+    "footer footer footer";
+    grid-template-rows: 15% auto auto 10%; 
+    grid-template-columns: 20% auto 25%; }
+  }
+
+.logo{
+ border-radius: 25px;
+}
+/* .border {
+border: 1px solid black;
+border-radius: 20px;
+
+}
+ */
+
+header {
+grid-area: header;
+}
+footer {
+grid-area: footer;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+align-items: left;
+}
+footer:hover{
+    opacity: 1.0;
+
+}
+
+section {
+grid-area: section;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+
+}
+section:hover{
+    opacity: 1.0;
+
+}
+
+nav {
+
+grid-area: nav;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+}
+nav:hover{
+     opacity: 1.0;
+
+    }
+
+
+aside{
+grid-area: aside ;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+}
+
+aside:hover{
+    opacity: 1.0;
+
+   }
+
+#imageCarrousel{
+border-radius: 10px;
+
+}
+
+#tutorialElements{
+    height:80%;
+    display: grid;
+    grid-template-areas:
+    "tutorialVideo tutorialVideo"
+    "tutorialPdf tutorialPdf";
+  
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto ;
+    
+  }
+ 
+
+  @media screen and (min-width: 768px) {
+  #tutorialElements{
+    height:80%;
+    display: grid;
+    grid-template-areas:
+    "tutorialVideo tutorialPdf"
+    "tutorialVideo tutorialPdf";
+
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto ;
+    justify-content: space-around;
+   
+
+   }
+  }
+
+
+
+#sectionTutorials:hover{
+     opacity: 1.0;
+
+    }
+
+  #tutorialVideo{
+
+    grid-area:tutorialVideo ;
+    
+    }
+    
+    
+    #tutorialPdf{
+    
+    grid-area:tutorialPdf ;
+    
+    }
+
+.pdfTutorial{
+height:330px;
+border-radius: 10px;
+
+}
+
+#imgFlt{
+margin-top: 25px;
+}
+
