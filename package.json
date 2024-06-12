@@ -1,0 +1,27 @@
+{
+  "name": "proyecto_jorge_ricciardi",
+  "version": "1.0.0",
+  "description": "tercera entrega",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malatesta13/desarrolloweb_jorge_ricciardi.git"
+  },
+  "keywords": [
+    "jorge",
+    "ricciardi",
+    "busqueda",
+    "de",
+    "vuelos",
+    "desarrolloweb"
+  ],
+  "author": "jorge ricciardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malatesta13/desarrolloweb_jorge_ricciardi/issues"
+  },
+  "homepage": "https://github.com/malatesta13/desarrolloweb_jorge_ricciardi#readme"
+}
