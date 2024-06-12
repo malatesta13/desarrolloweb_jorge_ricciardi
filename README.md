@@ -1,7 +1,3 @@
-Segunda entrega: 28may24
--se crea area.css para que controle tutorial.html y Airresults.html que se han hecho responsive
--Se utilizó bootstrap para hacer el carrousel de aside 
--no supe combinar @media queries y el responsive de bootstrap para achicar las imagenes de los vuelos en Air results y puse las más pequeñas.
 
 tercera entrega:
 -todas las paginas son responsives
@@ -11,3 +7,9 @@ tercera entrega:
 -Se compilo con SASS 
 -Se agregaron algunas best practice 
 -Faltaron crear anidamientos en SASS
+
+
+Segunda entrega: 28may24
+-se crea area.css para que controle tutorial.html y Airresults.html que se han hecho responsive
+-Se utilizó bootstrap para hacer el carrousel de aside 
+-no supe combinar @media queries y el responsive de bootstrap para achicar las imagenes de los vuelos en Air results y puse las más pequeñas.
