@@ -1,388 +1,284 @@
-
-
-* {
-    Margin:0;
-    padding:0;
- }
-
-
-/* Setting General */
-
 body {
 
-  
-   display: flex;
-    height: 100vh;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  position: center;
+  min-height: 100vh; 
 
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-   
-    background-size:cover ;
-    background-repeat: no-repeat;
-    position: center;
-    min-height: 100vh; 
-    
-    background-image: url("../multimedia/palacio_salvo.png");
-    
-    
-    }
-
+background-position: center center;
+background-attachment: fixed;
+background-repeat: no-repeat; background-size: cover;
   
+background-image: url("../multimedia/palacio_salvo.png");
+border-radius: 25px;
   
+  }
 
-    
-    header {
-    height: 20vh;
-    
-    }
-    
 
-     main{
-    height:75vh ;
-    width:100vw;
-   
-    display: flex;
-    flex-direction: row;
-    
-    
-    
-    
-     }
-    
-     footer{
-    height: 5vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  
-   
-    
-     }
-    
-    
-     nav {
-    width: 15vw;
-    background-color: azure;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    font-weight: bolder;
-    font-size: x-large;
-    color: rgb(22, 11, 146);
-    opacity: 0.75;
-    border-radius: 25px;
-    margin-right: 15px;
-     }
+
+  #grids {
+     height:100vh;
+     display: grid;
+     grid-template-areas:
+     "header"
+     "nav"
+     "section"  
+     "aside"
+     "footer";
      
-     nav:hover{
-     opacity: 1.0;
-
-     }
-    
-     .navmenu{
-      height: 80vh;
-      display:flex;
-      flex-direction: column;
-      padding:5px;
-      list-style: none;
-      
-     }
-     
-     .limenu{
-      padding-bottom: 3ex;
-
-
-     }
-
-     section {
-    display: flex;
-   flex-direction: column;
-    width: 65vw;
-    padding: 5px;
-  
-    align-items:self-start;
-   justify-content: space-around;
-   color: rgb(22, 11, 146);
-   font-weight: bolder;
-   font-size: x-large;
-   background-color:aliceblue;
-   opacity: 0.75;
-   border-radius: 25px;
-   margin-right: 15px;
-
-     }
-
-     section:hover{
-    opacity: 1.0;
-     }
-
-     #SearchButton{
-     
-      color: rgb(22, 11, 146);
-      display: flex; 
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: x-large;
-      background-color: azure;
-      border-radius: 15px;
-      }
-     
-    
-     aside{
-     width: 20vw;
-     margin: auto;
-    overflow: hidden;  
-     }
-  
-   /* Carrusel */
-
-   .titulo-aside{
-
-   color: rgb(211, 40, 60);
-   font-size: xx-large;
-
+     grid-template-rows: auto; 
+     grid-template-columns: auto;
+     gap:5px;
    }
-   
-   .galeria{
-
-      padding:16px,
-
-      }
-
-   
-      
-      .lista-imagenes img {
-      
-      width:100%;
-      object-fit: cover;
-      display:block;
-      padding: 5px;
-      border-radius: 25px;
-      
-      }
-      
-      .lista-imagenes {
-      
-      display: flex;
-      overflow-y:auto;
-      
-      
-      }
-
-     .nombre-ciudad{
-     color: rgb(22, 11, 146);
-     font-size:xx-large;
-   
-     flex-wrap:wrap;
-
-     }
-
-     .cities{
-      writing-mode: vertical-rl;
-      text-orientation: upright;
 
 
-     }
+@media screen and (min-width: 768px) {
+#grids{
+ height:100vh;
+ display: grid;
+ grid-template-areas:
+ "header header header"
+ "nav section aside "
+ "nav section aside"
+ "footer footer footer";
+ grid-template-rows: 15% auto auto 10%; 
+ grid-template-columns: 20% auto 25%; }
+}
 
- /* Home page */
-  
+.logo{
+border-radius: 25px;
+}
 
-/* Reset password page */
 
-.headerpwd {
-    height: 20vh;
- 
+header {
+grid-area: header;
+}
+footer {
+grid-area: footer;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+align-items: left;
+}
+footer:hover{
+ opacity: 1.0;
+
+}
+
+section {
+grid-area: section;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+
+}
+section:hover{
+ opacity: 1.0;
+
+}
+
+nav {
+
+grid-area: nav;
+background-color: azure;
+padding: 5px;
+font-size: x-large;
+color: rgb(22, 11, 146);
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
+}
+nav:hover{
+  opacity: 1.0;
 
  }
 
-.mainpwd{
-height:70vh;
-display: flex;
-flex-direction: row;
 
-
-
-}
-
-.footerpwd{
-height: 10vh;
-display: flex;
-
-}
-
-#resetpwd {
+aside{
+grid-area: aside ;
+background-color: azure;
+padding: 5px;
 font-size: x-large;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 color: rgb(22, 11, 146);
-border-radius: 20px;
+opacity: 0.75;
+border-radius: 25px;
+margin-right: 15px;
 }
 
-#checkemail{
-color: rgb(22, 11, 146);
-border-radius: 20px;
-background-color: lightgrey;
+aside:hover{
+ opacity: 1.0;
+
 }
 
+#imageCarrousel{
+border-radius: 10px;
 
+}
 
-#backtologinpage{
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  color: rgb(22, 11, 146);
-  font-weight: bolder;
-  font-size: x-large;
-  background-color: azure;
-  border-radius: 20px;
+#tutorialElements{
+ height:80%;
+ display: grid;
+ grid-template-areas:
+ "tutorialVideo tutorialVideo"
+ "tutorialPdf tutorialPdf";
 
-
-  }
-  
-
-/* End Reset password page */
-
-
-/* Login page (index.html)  */
-
-#fieldsetLogin{
-  
-    text-align: left;
-    color: rgb(22, 11, 146);
-    font-weight: bolder;
-    font-size: x-large;
-    background-color: azure;
-    border-radius: 25px;
-  
-  }
-  
-  #loginTitle {
-  
-  text-align: center;
-  
-  
-  }
-  
-  
-  #loginButton {
-  
-    
-    text-align: center;
-       color: rgb(22, 11, 146) ;
-      font-weight:  bold;
-      font-size: x-large;
-      border-radius: 15px;
-  
-    
-   }  
-
+ grid-template-columns: auto auto;
+ grid-template-rows:auto auto ;
  
-  
-    .login1 {
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:center;
-    border-radius: 20px;
-    
-      
-  
-    }
-  
-  .loginpage {
-  
-  display:flex;
-  
-  }
-  
-  .login1{
-  
-  margin:auto
-  
-  }
-  
-  
-  #forgottenPasswordId {
-  
-  
-   display: flex; 
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    color: rgb(22, 11, 146);
-    font-weight: bolder;
-    font-size: x-large;
-    background-color: azure;
-    border-radius: 20px;
-  
-  }
-  
-  /* final login page */
-
-  /* tutorial page */
+}
 
 
- .sectiontutorials{
-  display: flex;
-  flex-direction: row;
-    width: 65%;
-    padding: 5px;
-  
-   align-items:self-start;
-   justify-content: space-around;
-   color: rgb(22, 11, 146);
-   font-weight: bolder;
-   font-size: x-large;
-   background-color:aliceblue;
-   opacity: 0.75;
-   border-radius: 25px; 
+@media screen and (min-width: 768px) {
+#tutorialElements{
+ height:80%;
+ display: grid;
+ grid-template-areas:
+ "tutorialVideo tutorialPdf"
+ "tutorialVideo tutorialPdf";
+
+ grid-template-columns: auto auto;
+ grid-template-rows:auto auto ;
+ justify-content: space-around;
 
 
+}
+}
+
+#tutorialPdf{
+
+transition: transform .2s;
+
+}
+
+#tutorialPdf:hover{
+
+transform: scale(1.5);
+}
+
+#tutorialVideo{
+
+transition: transform .2s;
+
+}
+
+#tutorialVideo:hover{
+
+transform: scale(1.5);
 }
 
 
 
 
-.tutorialelements{
+
+#sectionTutorials:hover{
+  opacity: 1.0;
+
+ }
+
+#tutorialVideo{
+
+ grid-area:tutorialVideo ;
+ 
+ }
+ 
+ 
+ #tutorialPdf{
+ 
+ grid-area:tutorialPdf ;
+ 
+ }
+
+.pdfTutorial{
+height:330px;
+border-radius: 10px;
+
+}
+
+#imgFlt{
+margin-top: 25px;
+}
+
+#pwd{
+border-radius: 10px;
+
+}
+
+.resetPassword{
+
 display:flex;
-flex-direction:row;
-height:80%;
-width:80%;
-padding:15px;
-align-items: stretch;
-justify-content: space-around;
+align-items: center;
+justify-content: center;
+margin-top: 15%;
 
 
 }
 
- .tutorialvideo{
-  width:40%;
-  height:40%;
-  /* padding:25px; */
+#pwd{
+
+margin:5%;
+
+
 }
 
-.tutorialpdf{
-  width:30%;
-  height:30%;
-  /* padding:25px; */
+.searchSection{
 
-} 
+display:flex;
+align-items: center;
+justify-content: center;
+margin-top: 15%;
+margin-bottom:15%;
+
+}
+
+#searchBox{
+
+border-radius:10px;
+}
 
 
+#imgFlt{
+
+transition: transform .2s;
+
+}
+
+#imgFlt:hover{
+
+transform: scale(1.5);
+}
+
+
+.loginPassword{
+
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 5%;
+margin-bottom: 5%;
+
+}
+
+#login{
+
+border-radius:10px;
+margin:10px;
+}
 
 a {
 text-decoration: none;
-
 }
 
-a:hover{
-color: lightslategrey;
+.button {
+
+cursor:pointer;
 
 }
-
-
-
-
