@@ -59,7 +59,7 @@ section {
   grid-area: section;
   background-color: azure;
   padding: 5px;
-  font-size: x-large;
+  font-size: middle;
   color: rgb(22, 11, 146);
   opacity: 0.75;
   border-radius: 25px;
@@ -155,16 +155,13 @@ aside:hover {
   border-radius: 10px;
 }
 
-#imgFlt {
-  margin-top: 25px;
-}
-
 #pwd {
   border-radius: 10px;
 }
 
 .resetPassword {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -187,6 +184,8 @@ aside:hover {
 
 #imgFlt {
   transition: transform 0.2s;
+  margin-top: 25px;
+  width: 90%;
 }
 
 #imgFlt:hover {
@@ -213,6 +212,10 @@ a {
 
 .button {
   cursor: pointer;
+}
+
+.limenu {
+  font-size: large;
 }
 
 /*# sourceMappingURL=styles.css.map */
